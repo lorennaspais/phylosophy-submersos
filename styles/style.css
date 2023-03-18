@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,200;0,300;1,500&display=swap');
+
+:root {
+ --cor-primaria: #2C3333;
+ --cor-secundaria: #CBE4DE;
+ --cor-terciaria: #0E8388;
+ --cor-hover: #2E4F4F;
+
+ --fonte-primaria: 'Krona One' sans-serif ;
+ --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+box-sizing: border-box;
+background-color: var(--cor-primaria);
+color: var(--cor-secundaria);
+font-family: Krona One;
+}
+.cabeçalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabeçalho__menu{
+ font-size: 2.25rem ;
+ font-family: var(--fonte-secundaria);
+ color: var(--cor-terciaria);
+ text-decoration: none;
+ font-weight: 600;
+
+}
+
+.cabeçalho_menu_nav{
+display: flex;
+gap: 80px;
+
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% 15%;
+    gap: 82px;
+
+}
+
+
+.container__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.destaque-titulo{
+color: var(--cor-terciaria);
+
+}
+
+.titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 4rem;   
+}
+.container__content__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 2.25rem;
+
+}
+
+.texto{
+    font-size: 2.25rem;
+    font-family: var(--fonte-secundaria);
+}
+.container__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+}
+
+.botões{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    border-radius: 10px;
+    font-size: 2.25rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+}
+
+.botões:hover{
+background-color: var(--cor-hover);
+
+}
+
+.container__imagem{
+    width: 50%;
+
+}
+
+.rodapé{
+ padding: 24px;
+ color: var(--cor-secundaria);
+ background-color: var(--cor-terciaria);
+ text-align: center;
+ font-size: 2.25rem;
+ font-family: var(--fonte-secundaria);
+
+}
+
+@media (max-width: 1200px){
+
+
+    .cabeçalho{
+        padding: 10%;    
+    }
+
+    .cabeçalho_menu_nav{
+    
+        justify-content: center;
+    }
+    
+
+    .container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__content{
+        width: auto;
+    }
+}
